@@ -29,8 +29,7 @@ function App() {
   return (
     <MyProvider>
     <div >
-      <Routes>
-        
+      <Routes>       
         <Route path='/Login' element={<Login/>} />
         <Route path='/' element={<HomePage/>} />
         <Route path='/registration' element={<Registration/>} />
