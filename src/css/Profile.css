@@ -1,0 +1,652 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.ContainerAllContentProfile{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.smallParent {
+  width: 80%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 65%;
+  gap: 30px;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid black;
+  justify-content: flex-start;
+}
+.imageProfDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.profile-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  border: 1px solid black;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.ContEditProfile{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.editBtnprofile{
+  font-size: 15px;
+  color: var(--darkgreen-color);
+  cursor: pointer;
+  border: 1px solid var(--darkgreen-color);
+  padding: 3px 7px;
+  border-radius: 3px;
+}
+.editBtnprofile:hover{
+  color: white;
+  background-color: var(--darkgreen-color);
+  cursor: pointer;
+}
+.profile-bio {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #ffffffeb;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+.nameUser {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.plan {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  padding: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.plan-image {
+  width: 20rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.plan-details {
+  padding: 1rem;
+}
+
+.plan-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.plan-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ParentHeadData {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.DataForLeftRight {
+  width: 77%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid white; */
+}
+.RightBox,
+.leftBox {
+  border: 1px solid #fff;
+  width: 48%;
+}
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.leftBox > h1 {
+  color: white;
+}
+
+.leftBox > div {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.RightBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+ 
+}
+
+.watchedCourse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.watchedCourse:hover {
+  background-color: gray;
+}
+.badgesAndPoints{
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.badgesContainer {
+  display: flex;
+  width: 46%;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: black;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pointsContainer{
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  background-color: brown;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 10px;
+}
+.badgesDiv{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: auto;
+  max-height: 100px;
+  padding: 10px;
+}
+.badge {
+  padding: 10px;
+  border-radius: 10px;
+}
+.badge:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pointsDiv {
+  flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    max-height: 100px;
+    padding: 10px;
+}
+.pointsDiv > li {
+  padding: 10px;
+  font-size: 1.1em;
+}
+.tasksDiv{
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  
+}
+
+.profileBeg::marker {
+  color: green;
+}
+.profileInter::marker {
+  color: orange;
+}
+.profileExp::marker {
+  color: red;
+}
+
+.AllIdeasWidth80{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 800px) {
+  .badgesAndPoints{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    row-gap: 40px;
+  }
+  .badgesAndPoints>div{
+    width: 100%;
+  }
+  .DataForLeftRight {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    row-gap: 40px;
+  }
+  .DataForLeftRight > div {
+    width: 100%;
+  }
+  .social-icons a {
+    width: 2rem;
+    height: 2rem;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+  .profile-bio {
+    font-size: 0.8rem;
+  }
+  .profile-image {
+    width: 7rem;
+    height: 7rem;
+  }
+  .nameUser{font-size: 12px;}
+}
+.ContCardPaper{
+  width: 300px;
+  /* height: 350px; */
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.ContCardPaper:hover{
+  scale: 1.1;
+}
+.ContCardPaper>div{
+  width: 100%;
+  height: 50%;
+  color: black;
+}
+.ContCardPaper div img{
+  width: 100%;
+  height: 100%;
+}
+ .detailsbtn:hover{
+  color: white;
+  background-color: var(--button-color);
+}
+ .deletebtn:hover{
+  color: white;
+  background-color: rgb(230, 52, 52);
+}
+ .detailsbtn{
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  transition: 0.6s;
+  background-color: transparent;
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+}
+ .deletebtn{
+  cursor: pointer;
+
+  padding: 4px;
+  font-size: 16px;
+  transition: 0.6s;
+  background-color: transparent;
+  border: 1px solid rgb(230, 52, 52);
+  color: rgb(230, 52, 52);
+}
+/* .editPaperbtn{transition: 0.5s;}
+.deletePaperbtn{transition: 0.5s;} */
+
+.editPaperbtn:hover{
+  background-color: rgb(41, 150, 41);
+}
+.deletePaperbtn:hover{
+  background-color: rgb(198, 25, 25);
+}
+.ContDataInCardPaper{
+       /* padding: 12px; */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 100%;
+       gap: 10px;
+      }
+
+    .Contbtns{
+      display: flex;
+      /* flex-direction: column; */
+      gap: 10px;
+      justify-content: center;
+    }
+    .AddNewPaper{
+      padding: 10px;
+      font-size: 22px;
+      background-color: var(--orange-color);
+      transition: .5s;
+      border: none;
+      color: white;
+      margin: 20px;
+    }
+    .AddNewPaper:hover{
+      background-color: var(--darkgreen-color);
+      border-radius: 20px;
+    }
+
+    .ContInviteAndRequest{
+      margin: 50px;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      gap: 50px;
+    }
+
+    .Invitation{
+      background-color: aliceblue;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      /* justify-content: center; */
+      padding: 20px;
+      border-radius: 10px;
+      gap: 20px;
+    }
+    .ContExpertRequests{
+      width: 80%;
+      gap: 35px;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .ContTitleAndContent{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 10px 0px;
+    }
+    .ContAllWithbtn{
+      display: flex;
+      flex-direction: revert;
+      gap: 20px;
+      width: 350px;
+      height: 200px;
+      align-items: center;
+      transition: 0.5s;
+      background-color: aliceblue;
+      padding: 10px;
+    }
+    .ContAllWithbtn:hover{
+      /* border: 1px solid white; */
+      scale: 1.1;
+
+
+    }
+    .ContTitleAndContent>p:nth-child(1){
+      color: black;
+      font-weight: bold;    }
+    .contentData{
+      color: black;
+      overflow: auto;
+      height: 100px;
+      max-height: 130px;
+      padding: 0 10px 10px 0;    }
+    .ContAllRequests{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-height: 240px;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: auto;
+      padding: 10px;
+    }
+    .PapersContainer{
+      display: flex;
+      gap: 40px;
+      width: 40%;
+      max-height: 480px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: auto;
+      padding: 10px;
+    }
+    .ContExpertRequests h1{
+      text-align: center;
+      color: black;
+    }
+    .ContainerInfoWithbtn{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .viewData{
+      border: none;
+      padding: 6px 10px;
+      transition: 0.5s;
+      background-color: var(--orange-color);
+      color: white;
+    }
+    .viewData:hover{
+      color: white;
+      background-color: var(--darkgreen-color);
+      border-radius: 8px;
+    }
+    .ContAllRequestss{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;    }
+    .ContainerreauestWithBtn{
+      display: flex;
+      gap: 15px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ContainerreauestWithBtn button,.hoverBtn{
+      border: 1px solid var(--button-color);
+      background-color: transparent;
+      color: var(--button-color);
+      padding: 4px;
+      transition: 0.5s;
+    }
+    .ContainerreauestWithBtn button:hover,.hoverBtn:hover{
+    background-color: var(--button-color);
+    color: white;
+    }
+
+      .image-container {
+        position: relative;
+       
+          }
+   
+    .button-container {
+      position: absolute;
+      bottom: 39%;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: 10px;
+     
+  
+    }
+    .image-container:hover .button-container {
+      opacity: 1;
+    }
+    .button-container p{
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    .editBtnprofile {
+      color: black;
+      cursor: pointer;
+      /* Additional styles for the button */
+    }
+    .ContainerAllIdeasInProfile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: aliceblue;
+      padding: 10px;
+      width: 90%;
+    }
+
+
+    @media only screen and (max-width: 950px) {
+      .ContEditProfile>div{
+        justify-content: center;
+      }
+    }
+
+
+
+    @media only screen and (max-width: 800px) {
+      .badgesAndPoints>div{
+        width: 70%;
+      }
+    }
+
+    @media only screen and (max-width: 650px) {
+      .detailsbtn{
+        font-size: 12px;
+      }
+      .ContInviteAndRequest{
+        flex-direction: column;
+      }
+      .PapersContainer{
+        width: 70%;
+      }
+      .profile-header{
+        width: 95%;
+      }
+    }
+    

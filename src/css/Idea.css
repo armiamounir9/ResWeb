@@ -1,0 +1,174 @@
+.CardInAllIdeasInIdea{
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  gap: 30px;
+  border-top: 15px solid var(--darkgreen-color) !important;
+  border: 1px solid var(--darkgreen-color);
+}
+.CardInAllIdeasInIdea1{
+  display: flex;
+  width: 600px;
+  max-height: 850px;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  gap: 30px;
+  border-top: 15px solid var(--darkgreen-color) !important;
+  border: 1px solid var(--darkgreen-color);
+}
+.containerSpansData1{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  border-radius: 25px 25px 0 0px;
+  height: 100%;
+  color: black;
+}
+.rejectReq{
+
+}
+.ContainerParticipants{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.rejectReq{
+    border: 1px solid red;
+    background-color: transparent;
+    color: red;
+    padding: 4px;
+    transition: 0.5s;
+  }
+  .rejectReq:hover{
+  background-color: red;
+  color: white;
+  }
+  .acceptReq{
+    border: 1px solid var(--darkgreen-color);
+    background-color: transparent;
+    color: #05b1c7;
+    padding: 4px;
+    transition: 0.5s;
+  }
+  .acceptReq:hover{
+  background: linear-gradient(#05b1c7, #16ccbc);
+  color: white;
+  }
+
+  .contButtonsInIdea{
+    display: flex;
+    justify-content: center;
+    gap: 8px 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+.InputChat:focus{
+    outline: none;
+}
+  .InputChat{
+    border-top: none;
+    border-right: 2px solid var(--darkgreen-color);
+    border-bottom: none;
+    border-left: none;
+    border-image: initial;
+    width: 85%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .DivContChatIcon{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+.descriptionContainer{
+  display: flex;
+          max-height: 67px;
+          overflow: auto;
+          flex-direction: column;
+          border-bottom: none !important;
+}
+  .ContAllDataWithInput{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 430px;
+    justify-content: space-between;}
+
+    .spanChat{
+      /* background-color: var(--darkgreen-color);
+      padding: 12px; */
+      /* border-radius: 5px 5px 15px 0px; */
+      max-width: 300px;
+      font-size: 18px;
+    }
+    .spanChat1{
+      /* background-color: var(--darkgreen-color);
+      padding: 12px; */
+      /* border-radius: 5px 5px 0px 15px; */
+      max-width: 300px;
+      font-size: 18px;
+    }
+    .borderR{
+            border-radius: 5px 5px 15px 0px;
+    }
+    .borderR1{
+            border-radius: 5px 5px 0px 15px;
+
+    }
+
+    .shape5{
+          /* position: absolute; */
+    /* height: 1000px; */
+    /* width: 1000px; */
+    /* background-color: aqua; */
+    /* top: 50%; */
+    /* left: 50%; */
+    background-color: #efefef;
+    width: 100%;
+    height: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;}
+
+    @media only screen and (max-width:700px) {
+      .CardInAllIdeasInIdea1{
+        width: 80%;
+      }
+      .CardInAllIdeasInIdea{
+        width: 80%;
+      }
+      .contButtonsInIdea{
+        height: 80px;
+        overflow: auto;
+      }
+      }
+
+      @media only screen and (max-width:550px) {
+        .InputChat{
+          width: 83%;
+        }
+        }
+        @media only screen and (max-width:450px) {
+          .InputChat{
+            width: 80%;
+          }
+          }

@@ -1,0 +1,65 @@
+.courseForStudentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-color: black;
+}
+
+.courseForStudentContent{
+    display: flex;
+    width: 100%;
+    margin-top: 88px;
+
+}
+
+.courseForStudentVideoDiv{
+    width: 70%;
+    height: 600px;
+}
+.videosFixed{
+
+}
+
+.videosNames{
+       /* margin-top: 50px; */
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 10px; */
+}
+.videosNames>span{
+    font-size: 22px;
+    /* border-radius: 10px; */
+    
+}
+
+
+
+
+@media only screen and (max-width:1300px) {
+
+    .courseForStudentContent{
+        margin-top: 30px;
+    }
+    }
+
+
+
+
+@media only screen and (max-width:700px) {
+
+    .courseForStudentContent{
+        flex-direction: column;
+    }
+    .videosFixed{
+        width: 70% !important;
+    }
+    .courseForStudentVideoDiv{
+        width: 100%;
+    }
+    .loadVideo{
+        width: 100% !important;
+    }
+    }

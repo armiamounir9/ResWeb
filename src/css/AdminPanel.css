@@ -1,0 +1,396 @@
+
+.adminPanelParent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #262626;
+}
+.AllExpertReq{
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow: auto;
+  align-items: center;
+}
+.ContBTNSData{
+  height: 230px;
+  max-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ContExpertReqAdmin{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+  /* padding: 20px; */
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+}
+.contTitleAndContnentReq{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 320px;
+  height: 175px;
+}
+.UserNameHover{
+
+}
+.UserNameHover:hover{
+  color: var(--darkgreen-color);
+}
+.coursesParent {
+       /* max-width: 1104px; */
+       max-width: 1200px;
+       margin: 0px 50px;
+       padding: 20px;
+       background-color: var(--background-color);
+       border-radius: 5px;
+  }
+  .coursesParent>h1{
+    text-align: center;
+  }
+  
+  /* Styles for the courses and create new course button container */
+  .coursesAndPlusBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+  }
+  
+  /* Styles for the individual course container */
+  .courseDiv {
+    display: flex;
+    width: 325px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 5px; */
+    align-items: center;
+  }
+  
+
+.courseDiv:hover{
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+  /* Styles for the course name */
+  .courseDiv h4:first-child {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+  }
+  .courseDiv h4 span:first-child {
+    
+    font-weight: bold;
+  }
+  /* Styles for the course hours and brief */
+  .courseDiv h4:not(:first-child) {
+    font-size: 16px;
+  }
+  .bold{
+    font-weight: bolder;
+  }
+  .notBold{
+    font-weight: 500;
+  }
+  .courseNamea{
+    color: var(--darkgreen-color);
+  }
+  /* Styles for the create new course button */
+  .plusBtn {
+    position: relative;
+    /* width: 100%; */
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: var(--darkgreen-color);
+    align-items: center;
+    display: flex;
+column-gap: 3px;
+
+
+  }
+  
+  /* Styles for the create new course button hover state */
+  .plusBtn:hover {
+    color: white;
+    /* animation: moveUp 0.3s forwards; */
+    transform: translateY(-4px);
+    box-shadow: 0 2px 32px 0 var(--darkgreen-color);
+  }
+  .plusBtn:hover svg{
+    color: white;
+  }
+  @keyframes moveUp {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -5px; /* Adjust this value to control the amount of upward movement */
+    }
+    
+  
+  }
+  
+  
+  
+  
+  .AllContCoursesAndCreateQuiz{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  .allSkillsDiv{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 300px;
+    justify-content: space-between;
+    border: 1px solid var(--background-color);
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  .allSkillsDivForProblems{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 370px;
+    /* justify-content: space-between; */
+    border: 1px solid var(--background-color);
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  .ContainerreauestWithBtnForProblems{
+    background-color: white;
+    display: flex;
+    /* gap: 15px; */
+    flex-direction: column;
+    width: 370px;
+    height: 210px;
+    align-items: center;
+    /* border: 1px solid white; */
+    /* padding: 10px; */
+    border-radius: 10px;
+  }
+  .ContAllProblemsCards{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: wrap;
+    width: 97%;
+    justify-content: center;
+    gap: 20px;
+  }
+  .SelectSkillForProblems{
+    width: 80%;
+    max-width: 200px;
+    /* text-align: center; */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #efefef;
+    color: var(--darkgreen-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+  }
+  .allSkillsDiv h2{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;  }
+  .select-field-skillInAdminPanel{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--button-color);
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* .allSkillsDiv button{
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+    background-color: transparent;
+    padding: 10px;
+  }
+  .allSkillsDiv button:hover{
+    background-color: var(--orange-color);
+    color: white;
+  } */
+  .ContSpecialities div p{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--darkgreen-color);  }
+  .ContTopicAndSpeciality{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+ 
+  .ContSpecialities{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+  
+.ContainerAllIdeas{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+  .AllIdeas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+   
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.CardInAllIdeas{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  width: 20%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  gap: 5px;
+  justify-content: space-between;
+  border-top: 15px solid var(--darkgreen-color) !important;
+  border: 1px solid var(--darkgreen-color);
+} 
+.CardInAllIdeas .spanForScroll{
+  max-height: 90px;
+  overflow: auto;
+  word-break: break-word;
+
+}
+.CardInAllIdeas:hover{
+  transform: translateY(-10px); /* Adjust this value to control the amount of upward movement */
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerSpansData{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  border-radius: 25px 25px 0 0px;
+  height: 60%;
+  color: black;
+}
+.ContainerbtnData{
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.CardInAllIdeas h2{
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width:1260px) {
+ .AllIdeas{
+  
+  width: 98%;
+ }
+ .CardInAllIdeas{
+  width: 40%;
+ }
+ 
+ }
+
+ @media only screen and (max-width:1000px) {
+  .ContainerbtnData{
+    flex-wrap: wrap;
+    
+  }
+  .searchPanel{
+    justify-content: flex-start;
+    width: 80%;
+  }
+  .allSkillsDiv{
+    width: 50%;
+  }
+  .ContainerAllIdeas{
+    width: 100%;
+  }
+  }
+
+
+  @media only screen and (max-width:700px) {
+    .CardInAllIdeas{
+      width: 70%;
+    }
+    
+    }
+
+    @media only screen and (max-width:500px) {
+      .allSkillsDiv{
+        width: 70%;
+      }
+      .coursesParent{
+        width: 70%;
+      }
+      .ContainerAllIdeas>h1{
+        text-align: center;
+      }
+      }

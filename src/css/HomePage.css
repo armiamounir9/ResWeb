@@ -1,0 +1,1034 @@
+:root {
+  --orange-color: #3030bf; 
+  --green-color: #4040ff; 
+  --darkgreen-color: rgb(21, 46, 125); 
+  --lightgreen-color: #3e8dff; 
+  /* --button-color:rgb(21, 46, 125); */
+  --button-color:rgb(31 49 105);
+
+  
+  --bluesky-color:#59aeff;
+  --background-color: #F8F1F1; 
+
+}
+
+
+
+@keyframes searchIconAnimation {
+  0% {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(150px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+.ContainerLandingAndBadges {
+  position: relative;
+}
+
+
+
+.sidebarCloseIcon {
+  width: 110px;
+  position: absolute;
+  top: 22%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  animation: searchIconAnimation 4s linear infinite;
+  z-index: -10;
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.homePageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+.ContainerLandingAndBadges{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage {
+  background-color: var(--button-color);
+  /* background: rgba(0, 0, 0, 0.5) url(http://localhost:3000/static/media/homePageImg.70d5afa….png); */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 100%;
+  clip-path: circle(50% at 50% 9%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Landing Page Styles */
+
+.landingData > h3,
+.landingData > h1,
+.landingData > p,
+.landingData > button {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+p {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: auto;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landingData {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 130px auto 0 auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.landingData > p {
+  font-size: 16px;
+  
+}
+
+/* .landingData > button {
+  height: 50px;
+  background-color: rgb(21, 46, 125);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  width: 13%;
+  min-width: 150px;
+  cursor: pointer;
+}
+.landingData > button:hover {
+  background-color: rgb(35 64 157);
+} */
+
+.quizContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  /* background-color: var(--button-color); */
+  background: linear-gradient(#3030bf, #59aeff);
+  justify-content: center;
+  align-items: center;
+  /* clip-path: circle(50% at 50% 50%); */
+  clip-path: circle(50% at 50% 50%);
+  gap: 40px;
+}
+.quizContainer > div > div > img
+ {
+  width: 100%;
+  min-width: 150px;
+
+  margin: 0 0 30px 0;
+}
+.researchContainer > div > div > img{
+  width: 100%;
+  min-width: 170px;
+
+  margin: 0 0 30px 0;
+}
+.quizContainer > div,
+.researchContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.quizContainer > h3,
+.researchContainer > h3 {
+  font-size: 20px;
+  margin: 50px 0 0 0;
+}
+.quizContainer > div > div,
+.researchContainer > div > div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizImg {
+  filter: blur(0.1rem);
+  width: 40%;
+  max-width: 500px;
+
+  margin: 0 0 30px 0;
+}
+.quizContainer > h1,
+.researchContainer > h1 {
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+.btnSkillHome{
+  padding: 8px;
+  font-size: 16px;
+  width: 130px;
+  border: 1px solid var(--button-color);
+  background-color: transparent;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.5s;
+  /* margin-top: 20px; */
+}
+.btnSkillHome:hover{
+  background-color: var(--button-color);
+  color: var(--background-color);
+}
+.selectboxSkill{
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #efefef;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+  font-size: 16px;
+  /* margin-bottom: 10px; */
+  transition: all 0.3s ease-in-out;
+}
+.badgeDiv {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 280px;
+  /* align-items: center; */
+  gap: 15px;
+  background: linear-gradient(#f6f6f6, #ececec);
+}
+.badgesDivContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: -25%;
+  z-index: 20;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.badgeDiv > img {
+  width: 100px;
+}
+.badgeDiv > h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.badgeDiv > p {
+  color: black;
+  font-size: 16px;
+  max-height: 100px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.coursesContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 0 50px 0; */
+}
+.courseCard {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+  height: 190px;
+  justify-content: space-around;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  /* background: linear-gradient(#3030bf, #59aeff); */
+  color: white;
+
+}
+
+
+.courseCard > h1 {
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+}
+.courseCard > p {
+  font-size: 16px;
+  text-align: justify;
+}
+/* .courseCard >div> button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(48, 86, 209);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+} */
+
+.coursesBigDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* margin: 80px 0 80px 0; */
+}
+.coursesBigDiv > h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.coursesBigDiv > h3 {
+  text-align: center;
+  text-transform: capitalize;}
+
+.earnPointsContainer {
+          /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 50px 0 0 0; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    padding: 20px;
+    gap: 20px;
+}
+.earnPointsContainer > img {
+  width: 200px;
+}
+
+.researchContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  margin: 0 0 50px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.courseBtnAndPriceDiv{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+/* @media only screen and (max-width: 850px) {
+  .earnPointsContainer > h1 {
+    font-size: 1.5em;
+  }
+  .coursesContainer {
+    flex-direction: column;
+  }
+  .courseCard {
+    width: 70%;
+  }
+} */
+
+/* @media only screen and (max-width: 705px) {
+  .badgesDivContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+  }
+  .badgeDiv {
+    width: 70%;
+    margin: 20px 0;
+  }
+  .landingData {
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 57%;
+
+  }
+  .landingData>h3,.landingData>p,.landingData>h1{
+    width: 90%;
+  }
+  .landingData>p{
+    display: flex;
+    text-align: justify;
+  }
+  .quizContainer>div>div>h1{font-size: 1.2em;}
+  .researchContainer>div>div>h1{font-size: 1.2em;}
+  .earnPointsContainer>h1{font-size: 1.2em;}
+  .coursesBigDiv>h1{font-size: 25px;}
+  .btnsFooter button{
+    font-size: 13px;
+  }
+} */
+
+.ContNum img{
+  width: 100%;
+  height: 100%;
+}
+.ContNum{
+    clip-path: circle(50% at 50% 50%); 
+    background: linear-gradient(#3030bf, #59aeff); 
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContNum h2{
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.ContSkillAndAchievePrize{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  /* height: 430px; */
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@keyframes rotationAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Shape3 {
+  width: 80px;
+  height: 80px;
+  margin-bottom: -20%;
+  background: linear-gradient(#3030bf, #59aeff);
+  z-index: -1;
+  clip-path: polygon(100% 1%, 0 65%, 100% 100%);
+  animation: rotationAnimation 4s linear infinite;
+}
+.Shape4 {
+  width: 80px;
+  height: 80px;
+  margin-left: 76%;
+  margin-bottom: -20%;
+  background: linear-gradient(#3030bf, #59aeff);
+  z-index: -1;
+  clip-path: polygon(100% 1%, 0 65%, 100% 100%);
+  animation: rotationAnimation 4s linear infinite;
+}
+.Shape5 {
+  width: 80px;
+  height: 80px;
+  /* background-color: var(--lightgreen-color); */
+  background: linear-gradient(#3030bf, #59aeff);
+  margin-top: -20%;
+  margin-left: 76%;
+  z-index: -1;
+  clip-path: polygon(100% 1%, 0 47%, 100% 100%);
+  animation: rotationAnimation 4s linear infinite;
+}
+.Shape2{
+  width: 80px;
+  height: 80px;
+  /* background-color: var(--lightgreen-color); */
+  background: linear-gradient(#3030bf, #59aeff);
+  margin-top: -20%;
+  z-index: -1;
+  clip-path: polygon(100% 1%, 0 47%, 100% 100%);
+  animation: rotationAnimation 4s linear infinite;
+
+}
+
+.ContShape2Skill{
+  display: flex;
+  flex-direction: column;
+}
+
+.ContainerCoursesShape{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: relative;
+}
+
+.ShapeInCourses1{
+  position: absolute;
+  top: 4%;
+  /* width: 200px; */
+  left: 39%;
+  /* transform: translate(-50%, -50%); */
+  /* background-color: var(--bluesky-color); */
+  background: linear-gradient(#3030bf, #59aeff);
+  width: 250px;
+  height: 100px;
+  clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  z-index: -1;
+  /* transition: .6; */
+  animation: rotationAnimation1 2s linear infinite;
+
+}
+@keyframes rotationAnimation {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationAnimation1 {
+  0% {
+    transform: scale(.6)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ShapeInCourses2{
+  
+}
+
+
+
+
+
+
+
+@keyframes videoAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(15px); /* Move halfway to the right */
+  }
+  50% {
+    transform: translateX(0); /* Back to the original position */
+  }
+  75% {
+    transform: translateX(-15px); /* Move halfway to the left */
+  }
+  100% {
+    transform: translateX(0); /* Back to the original position */
+  }
+}
+
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  /* height: 0; */
+  /* padding-bottom: 56.25%; */
+  /* overflow: hidden; */
+}
+
+.videoContainer video {
+         /* position: absolute; */
+    width: 100%;
+    /* object-fit: cover; */
+    animation: videoAnimation 4s linear infinite;
+    border-radius: 20px;
+    width: 100%;
+    /* border-radius: 25px; */
+    height: 300px;
+    border: 1px solid var(--button-color);
+}
+.videoContainer h2 {
+
+animation: videoAnimation 4s linear infinite;
+}
+
+.fadinAnimation {
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.show{
+  opacity: 1;
+}
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+
+
+.hidden1{
+  display: none;
+  color: blue;
+}
+
+p {
+ 
+}
+
+p.active2 {
+  display: block;
+  color: red;
+}
+.AllAboutUsContainer{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  justify-content: center;
+  padding: 20px 0;
+}
+.AllLeftRightAboutUs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.AllAboutUsContainer h1{
+  z-index: 10;
+  width: 360px;
+  font-size: 4rem;
+  text-align: center;
+  color: #00000057;
+}
+.RightContainer {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  height: 300px;
+}
+.RightContainer p{
+  overflow: auto;
+  max-height: 270px;
+  color: var(--button-color);
+}
+.LeftContainer{
+  width: 25%;}
+.LeftContainer img{
+  width: 100%;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-active-0 {
+  transform: translateY(0);
+}
+
+.slider-active-1 {
+  transform: translateY(-100%);
+}
+
+
+
+.AllWhyChoose{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.ContainerWhy{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.cardWhyChooseRes{
+  width: 375px;
+  height: 200px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0px; */
+}
+.FirstInfo{
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  /* border-bottom: 1px solid black; */
+  align-items: center;
+}
+.FirstInfo p{
+  font-weight: bold;
+  font-size: 18px;
+}
+.FirstInfo img{
+  width: 50px;
+  height: 50px;
+}
+.imgColors{
+  width: 100%;
+  height: 100%;
+}
+
+.OurGradingSys{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#ffffff, aliceblue);
+  padding: 20px 0;
+}
+.ContainerAlGrade{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.AllUsers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.TextDownUsers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AllUsers div img{
+  width: 70px;
+  height: 70px;
+}
+.AllUsers div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.TextDownUsers p{
+  text-align: center;
+}
+.TextDownUsers{
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.AllContainerDetailsdata{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.BigParentContainer{
+  width: 16%;
+  height: 400px;
+  /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
+  background-color: aliceblue;
+  /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+  border-radius: 125px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border: 5px solid antiquewhite;
+}
+.smallParentContainerBottom{
+  height: 70%;
+}
+.closeSvg{
+  font-size: 38px;
+
+}
+.closeSvg:hover{
+  color: var(--bluesky-color) !important;
+cursor: pointer;
+}
+.smallParentContainerBottom p{
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  max-height: 175px;
+}
+.ContainerTopBottom{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  align-items: center;
+  gap: 20px;
+}
+.smallParentContainerTop{
+  height: 30%;
+  width: 100%;
+  border-radius: 125px 125px 0px 0px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: antiquewhite;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.smallParentContainer{
+
+}
+.smallParentContainer svg{
+
+}
+.smallParentContainer h2{}
+.ContainerTopBottom p{
+  padding: 3px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1080px) {
+  .badgesDivContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .badgeDiv{
+    width: 50%;
+  }
+  .movingSearchIcon{
+    display: none;
+  }
+  .ShapeInCourses1{
+    display: none;
+  }
+  .BigParentContainer{
+    width: 40%;
+  }
+ }
+
+
+ @media only screen and (max-width:950px) {
+    .ContSkillAndAchievePrize{
+      flex-direction: column;
+      row-gap: 50px;
+    }
+    .videoContainer{
+      width: 70% !important;
+        }
+  
+ }
+
+
+
+ @media only screen and (max-width:910px) {
+  .courseBtnAndPriceDiv{
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+  }
+  .courseCard{
+    row-gap: 20px;
+  }
+ .landingPage{
+  width: 100%;
+ }
+ 
+
+ }
+
+ 
+ @media only screen and (max-width:810px) {
+  .ContainerWhy{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardWhyChooseRes{
+    width: 70%;
+  }
+.ContainerCoursesShape{
+  width: 90%;
+}
+.courseBtnAndPriceDiv{
+  justify-content: space-between;
+}
+.badgeDiv{
+  width: 70%;
+}
+.AllLeftRightAboutUs{
+  flex-direction: column;
+}
+.AllAboutUsContainer{
+  padding-top: 80px;
+}
+.RightContainer{
+  width: 70%;
+}
+.landingPage{
+  height: 80vh;
+}
+ }
+
+  
+ @media only screen and (max-width:750px) {
+  .landingData{
+    margin: 80px auto 0 auto;
+  }
+  .AllUsers{
+    column-gap: 50px;
+    row-gap: 30px;
+  }
+  .OurGradingSys{
+    width: 90%;
+  }
+  .landingData>h1{
+    font-size: 24px;
+  }
+  .landingData>p{
+    font-size: 16px;
+  }
+  .coursesContainer{
+    flex-direction: column;
+  }
+  .courseCard{
+    width: 70%;
+  }
+  .landingPage{
+    height: 60vh;
+  }
+ }
+
+
+ @media only screen and (max-width:550px) {
+  
+  .landingData>h1{
+    font-size: 20px;
+  }
+  .landingData>p{
+    font-size: 14px;
+  }
+  .AllAboutUsContainer{
+    row-gap: 50px;
+  }
+  .BigParentContainer{
+    width: 60%;
+  }
+  .landingPage{
+    height: 50vh;
+  }
+  .congrats{
+    font-size: 1.5em !important;
+  }
+ }
+
+
+ @media only screen and (max-width:450px) {
+  .landingData{
+    margin: 40px auto 0 auto;
+  }
+  .AllWhyChoose>h1{
+    font-size: 2rem !important;
+  }
+  .AllWhyChoose>h1>span{
+    font-size: 1.3rem !important;
+  }
+  .AllUsers{
+    flex-direction: column;
+    
+  }
+  .quizContainer{
+    width: 340px;
+    height: 340px;
+  }
+ }
+
+
+
+
+
+
+

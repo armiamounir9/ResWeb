@@ -1,0 +1,83 @@
+.Footer{
+
+    background-color: rgb(21, 46, 125);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+    justify-content: space-around;
+    height: 180px;
+    gap: 20px;
+    background-image: url(../images/Logo\ -\ Text\ Only.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.btnsFooter{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btnsFooter button{
+    padding: 8px;
+    font-size: 18px;
+    width: 100px;
+    background-color: #00000047;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+
+}
+.btnsFooter button:hover{
+    background-color: transparent;
+}
+
+.IconsFooter{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-footer{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #ffffffa8;
+    transition: 0.5s;
+}
+.icon-footer:hover{
+    color: black;
+}
+
+
+.aboutUsAndContact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.aboutUsAndContact a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.aboutUsAndContact a:hover{
+    color: black;
+}
+.AllRightReserved{
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (max-width:910px) {
+    .Footer{
+        background-size: 100% auto;
+    }
+   
+   }

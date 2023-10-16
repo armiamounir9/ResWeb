@@ -1,0 +1,361 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p, h1 ,h2 ,h3 ,h4{
+  margin: 0;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0.13em;
+  height: 0.3em;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--darkgreen-color);
+  border-radius: 0.25em;
+}
+
+
+/* For choose file */
+.InputFile[type="file"]::-webkit-file-upload-button {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.InputFile[type="file"]::file-selector-button {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;  
+ 
+}
+.InputFile{
+  padding: 10px;
+  border: 1px solid var(--darkgreen-color);
+  color: var(--darkgreen-color);
+}
+.LableForinputTypeFile{
+  width: 80%;
+  
+  padding: 10px;
+  border-radius: 5px;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.SpanUpload{
+  padding: 8px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkgreen-color);
+  color: white;
+}
+.SpanUpload svg{
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.SpanUpload:hover{
+  background-color: var(--button-color);
+cursor: pointer;
+}
+.SpanUpload:hover svg{
+ color: white;
+}
+
+
+
+
+/* button for all */
+
+.button-arounder1 {
+  --c:  var(--darkgreen-color); /* the color*/
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .6s, background-position 0s .4s;
+}
+.button-arounder1:hover {
+  color: white;
+top: -5px;
+  --_p: 100%;
+  transition: background-position .6s, background-size .4s;
+}
+/* .button-arounder1:active {
+  box-shadow: 0 0 9e9q inset var(--orange-color); 
+  background-color: var(--c);
+  color: #fff;
+} */
+.button-arounder1 {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 7px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: var(--darkgreen-color);
+  transition: top 0.8s ease;
+
+}
+
+
+.bn54 {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 10px;
+  /* transition: 0.5s; */
+  /* transition: transform 0.8s ease; */
+  transition: transform 0.3s;
+  border-radius: 5px;
+  opacity: 1;
+  color: var(--button-color);
+  background-color: white;
+  border: 2px solid var(--button-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bn54 .bn54span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+.bn54:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+  background: linear-gradient(#3030bf, #59aeff);
+  /* background-color: var(--bluesky-color); */
+  transform: translateY(-4px);
+  color: white;
+  border: none;
+  border: 2px solid var(--button-color);
+
+
+}
+
+.bn54:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+  color: var(--darkgreen-color);
+
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shakingText {
+  animation: shakeAnimation 2s linear infinite;
+  animation-delay: 3s; /* Delay before the animation starts */
+  
+}
+
+
+.buttonn {
+  --c: goldenrod;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.2em solid var(--c);
+  border-radius: 0.5em;
+  width: 180px;
+  padding: 5px;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-family: sans-serif;
+  /* letter-spacing: 0.1em; */
+  text-align: center;
+  /* line-height: 3em; */
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+  transition: 0.5s;
+  /* margin: 1em; */
+}
+
+.span5 {
+  position: relative;
+  /* width: 25%;
+  height: 100%; */
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.buttonn:hover {
+  color: black;
+}
+
+.buttonn:hover .span5 {
+  transform: translateY(0) scale(2);
+}
+
+
+
+
+
+.AllIdeas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Styling the select dropdown arrow */
+.search-select::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #666 transparent transparent transparent;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+
+/* .CardInAllIdeas {
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.CardInAllIdeas.active {
+  opacity: 1;
+  transform: translateY(0);
+} */

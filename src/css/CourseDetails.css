@@ -1,0 +1,613 @@
+
+.courseParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color:  #ececec;
+  color: rgb(35, 35, 35);
+  min-height: 100vh;
+}
+
+
+
+
+
+
+/* Styles for the course name */
+.NameCourse {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  /* color: var(--orange-color); */
+}
+
+/* Styles for the brief description */
+.briefCourse {
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Styles for the price */
+
+
+/* Styles for the buy now button */
+
+
+/* Styles for the buy now button hover state */
+
+
+
+
+
+
+
+
+
+.headInfo {
+  font-weight: bold;
+}
+
+.courseDetailesVideoDiv {
+  width: 50%;
+}
+
+
+
+.LinkVideoSection {
+  padding: 15px 25px;
+  border-bottom: 1px solid black;}
+.LinkVideoSection:hover{
+  background-color: rgb(203, 201, 201)
+  /* padding: 12px; */
+}
+.LinkVideoSection span{
+  /* padding: 5px; */
+  /* transition: all 0.3s ease; */
+}
+.LinkVideoSection span:hover {
+  /* background-color: #d1d7dc; */
+  /* padding: 10px; */
+  cursor: pointer;
+}
+.QuizTitle{
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--darkgreen-color);
+}
+.QuizTitle:hover{
+  cursor: pointer;
+}
+
+.courseDetailsSectionVideos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  display: flex;
+  padding-left: 25px;
+  transition: all 0.3s ease;
+}
+
+.courseDetailsSectionVideos > a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 95%;
+}
+.Video {
+  width: 100%;
+  height: 100%;
+}
+.courseDetailsSectionsContainer > h3 {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin: 7px 15px;
+}
+
+.courseDetailsSectionsContainer {
+  border-top: 1px solid #d1d7dc;
+}
+
+.ContSections {
+  width: 100%;
+}
+.courseDetailsSectionVideos {
+  display: flex;
+  padding-left: 25px;
+  width: 100%;
+}
+.Objectives {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 45%;
+  padding: 12px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+.Instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 45%;
+  padding: 12px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+.videoW{
+  width: 100%;}
+.ContObjecInst {
+  display: flex;
+  background-color: #484848;
+
+  justify-content: space-between;
+  border: 1px solid white;
+  width: 90%;
+  padding: 12px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.courseContentAndPlusButton {
+  display: flex;
+  
+  align-items: center;
+  width: 100%;
+}
+
+.addBtn {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addBtn:hover{
+    rotate: 180deg;
+    color: #079707;
+
+     /* width: 35px;
+  height: 35px; */
+}
+.delBtn{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.delBtn:hover{
+    /* rotate: 360deg; */
+    color: rgb(190, 8, 8);
+    width: 28px;
+  height: 28px;
+}
+
+.addSectionDiv {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.addSectionDiv > span {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.addSectionDiv > input {
+  width: 200px;
+  border-radius: 10px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.addSectionBtnsDiv > button {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: white;
+}
+.addSectionBtnsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  width: 40%;
+  column-gap: 20px;
+}
+.contVideoInfo{
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  height: 30px;
+}
+.sectionHeader .plusIcon{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sectionHeader .plusIcon:hover{
+  rotate: 180deg;
+  /* width: 35px;
+  height: 35px; */
+}
+
+.sectionHeader > h3 {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  /* padding: 0px 15px; */
+}
+.sectionHeader>h4{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sectionHeader>h4:hover{
+    rotate: 180deg;
+}
+.InputUpload{
+  width: 40%;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ebebeb;
+}
+.cancelbtn{
+  background-color: rgb(206, 8, 8);
+
+}
+.btnUpload:hover{
+  background-color: rgb(142, 142, 142)
+
+}
+.btnUpload{
+  width: 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 4px;
+  border-radius: 5px;
+  /* border: none; */
+  background-color: #ffffff;
+
+}
+.ChooseAndCancel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:15px;
+}
+
+#video-upload{
+  border: none;
+
+}
+.ChooseAndCancel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contVideoInfo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+  /* width: 350px; */
+  justify-content: center;
+}
+.uploadVideoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px ;
+}
+
+.deleteCourseDiv{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  align-items: center;
+  padding: 20px;
+
+}
+.deleteCourseDiv>h1{
+  margin: 0;
+}
+.deleteCourseDiv>div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.deleteCourseDiv>div>button{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: white;
+}
+
+.sectionIcons{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 20px;
+  width: 20%;
+}
+svg:hover{
+  color: var(--darkgreen-color);
+}
+
+
+
+
+
+
+
+
+
+/* 
+box-shadow: 15px 20px 50px 0px rgba(255, 111.99999999999986, 44.99999999999992, 0.45);
+
+#ff702d
+#117d5d
+#007d6f
+#71b9b4 
+#F8F1F1*/
+
+
+.AllContentContainer{
+  /* background-color:#F8F1F1 ; */
+  max-width: 1440px;
+  margin: 120px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.LeftCourseData{
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 1000px;
+  overflow: auto;
+  padding: 10px;
+
+}
+.LeftIntroData{
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.ContLeftDataInsObj{        display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+  border: 1px solid var(--orange-color);
+  padding: 12px;
+  margin-bottom: 40px;
+  position: sticky;
+  overflow: hidden auto;
+ }
+  .overFlow{
+    overflow: hidden auto;
+    padding-bottom: 16px;
+    /* background: #fff; */
+    z-index: 2;
+
+  }
+  
+.CenterAndRighCourseData{
+  /* max-width: 80%; */
+  width: 70%;
+  display: flex;
+  gap: 20px;
+  height: 100%;
+
+}
+.CourseSectionsData{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border: 1px solid white; */
+  width: 65%;
+  padding: 12px;
+  height: 100%;
+  /* max-width: 1000px
+px
+; */
+  margin-bottom: 20px;
+  /* background-color: #484848; */
+}
+.RightVideoIntro{
+  width: 100%;
+  /* max-width: 1000px; */
+  display: flex;
+ justify-content: space-evenly;
+  background-color: white;
+  flex-direction: column;
+}
+.VideoDv{
+  width: 100%;
+  height: 62%;}
+.VideoDv video{
+  width: 100%;
+}
+.BottomRightData{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+}
+.contVideoAndQuiz{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.h2Quizes{
+  text-align: center;
+}
+.btnBUY{
+  color: var(--orange-color);
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  transition: 0.6s;
+}
+.btnBUY:hover{
+  color: white;
+  background-color: var(--orange-color);
+  color: white;
+
+
+}
+.courseCOntAddDelSection{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  justify-content: center;
+  
+}
+.courseCOntAddDelSection h1{
+  margin-right: 30px;
+}
+.courseCOntAddDelSection .TrashPlus{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 80px; */
+}
+.ObjectivesNew,.InstructionsNew{
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 45%; */
+  padding: 12px;
+  /* max-width: 1000px; */
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.ObjectivesNew h3,.InstructionsNew h3,.briefCourseNew{
+  word-wrap: break-word;
+  font-size: 15px;
+  text-align: justify;
+  color: rgb(35, 35, 35);
+  max-height: 400px;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+
+.ObjectivesNew h2,.InstructionsNew h2{
+  text-align: center;
+  width: 100%;
+}
+.courseDetailsSectionVideosNew{
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 15px; */
+  display: flex;
+  transition: all 0.3s ease;
+}
+.courseDetailsSectionsContainerNew{
+border-radius: 5px;  background-color: white;}
+.ContSectionsNew{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 1000px;
+  overflow: auto;
+  padding: 10px;
+}
+
+@media only screen and (max-width:900px) {
+  .CenterAndRighCourseData{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .contVideoAndQuiz{
+    width: 80%;
+  }
+  .CourseSectionsData{
+    width: 80%;
+  }
+  }
+
+  @media only screen and (max-width:700px) {
+    .NameCourse{
+      font-size: 30px;
+      
+    }
+    
+    .LeftIntroData>h2{
+      font-size: 16px;
+    }
+    .LeftCourseData{
+      width: 70%;
+    }
+    .contVideoAndQuiz{
+      width: 100%;
+    }
+    .CourseSectionsData{
+      width: 100%;
+    }
+    }

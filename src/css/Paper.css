@@ -1,0 +1,33 @@
+.ContInviteResearchers{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* height: 100%; */
+    padding: 10px;
+    max-height: 70px;
+}
+.DivContResearchers{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;}
+    
+    .DivContResearchers2{
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;}
+    .DivContResearchers1{
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        gap: 20px;
+        align-items: center;}
+        
+    

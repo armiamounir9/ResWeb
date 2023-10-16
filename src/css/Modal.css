@@ -1,0 +1,465 @@
+.exit {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .buttonExit {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .headContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    width: 350px;
+  }
+  
+  
+  .resetAndCancel {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+    .cancel {
+      width: 30%;
+      padding: 5px;
+      border: none;
+      background-color: #dd2727;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+  
+    }
+    .submitForm {
+        width: 30%;
+        padding: 5px;
+        border: none;
+        background-color: #007bff;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+  .submitForm:hover{
+      background-color:#0468d4;
+  }
+  .cancel:hover {
+    background-color: #ff0000;
+  }
+
+  .modal1 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    width: 350px;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+  }
+/* for file */
+  /* <label className="LableForinputTypeFile" htmlFor="img">
+  <input className="InputFile" 
+  id="img" type="file" onChange={(e)=>setPhoto(e.target.files[0])}  />
+   <span className="SpanUpload">  <MdOutlineFileUpload/><span>Choose a File</span></span>
+  </label> */
+  
+  /*   <div className="modal-overlay2">
+        <div className="modal2">
+          <div className="ContExitbtn" onClick={props.onClose}>
+            <div class="outer">
+              <div class="inner">
+                <label className="label2">Exit</label>
+              </div>
+            </div>
+          </div>
+          <h1 className="headContact2">Create New Idea</h1>
+
+          <div className="FormModal2">
+            <label className="AllLabeles">Idea Name: </label>
+            <input
+              className="InputModalHallDetails"
+              onChange={getIdeaData}
+              name="name"
+            ></input>
+            <label className="AllLabeles">Participants Number: </label>
+            <input
+              className="InputModalHallDetails"
+              onChange={(e) =>
+                setIdeaData((prev) => {
+                  return { ...prev, maxParticipantsNumber: e.target.value * 1 };
+                })
+              }
+              name="maxParticipantsNumber"
+              type="number"
+            ></input>
+            <select
+              className="InputModalHallDetails"
+              onChange={(e) =>
+                setIdeaData((prev) => {
+                  return { ...prev, specalityId: e.target.value * 1 };
+                })
+              }
+            >
+              <option selected disabled value="">
+                Choose a Speciality
+              </option>
+              {allSpecs?.map((spec) => {
+                return <option value={spec.id}>{spec.name}</option>;
+              })}
+            </select>
+            <select
+              className="InputModalHallDetails"
+              onChange={(e) =>
+                setIdeaData((prev) => {
+                  return { ...prev, topicId: e.target.value * 1 };
+                })
+              }
+            >
+              <option selected disabled value="">
+                Choose a Topic
+              </option>
+              {allTopics?.map((spec) => {
+                return <option value={spec.id}>{spec.name}</option>;
+              })}
+            </select>
+            <label className="AllLabeles">Deadline</label>
+            <input
+              className="InputModalHallDetails"
+              type="text"
+              onChange={getIdeaData}
+              placeholder="yyyy-mm-dd"
+              name="deadline"
+            ></input>
+            <div className="buttonsOnModal">
+              <button className="" onClick={createNewIdea}>
+                Create
+              </button>
+              <button className="" onClick={props.onClose}>
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+   */
+ 
+  /* Modal Overlay */
+.modal-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Window */
+.modal2 {
+  align-items: center;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: white;
+  margin-top: 65px;
+  /* top: 50%; */
+  border-top: 20px solid var(--darkgreen-color);
+  
+  max-height: 470px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 90%;
+  /* max-height: 500px; */
+
+}
+
+/* Modal Header */
+.headContact2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0;
+  /* margin-bottom: 20px; */
+  color: #424242;
+}
+
+/* Modal Form */
+.FormModal2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-height: 400px;
+    overflow: auto;
+    padding: 10px;
+    width: 80%;
+    /* max-width: 300px; */
+  }
+
+/* Modal Form Label */
+.AllLabeles {
+  margin-bottom: 10px;
+  color: #424242;
+  font-weight: bold;
+}
+
+/* Modal Form Input */
+.InputModalHallDetails {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #424242;
+  letter-spacing: 1px;
+}
+
+/* Modal Form Textarea */
+.textAreaModalHallDetails {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  height: 100px;
+  resize: none;
+  color: #424242;
+}
+
+/* Modal Buttons Container */
+.resetAndCancel2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Modal Cancel Button */
+.cancel2 {
+  background-color: transparent;
+  border: none;
+  color: #424242;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Modal Submit Button */
+.submitForm2 {
+  background-color: #424242;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Modal Exit Button */
+.exit2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Modal Exit Button Style */
+.buttonExit2 {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px  solid rgb(228, 18, 18);
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+.buttonExit2:hover{
+  background-color: red;
+  color: white;
+  /* border: none; */
+}
+
+
+
+.outer {
+  position: relative;
+  width: 36px;
+  cursor: pointer;
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+.ContExitbtn{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* margin: 0 0 10px; */
+}
+.label2 { 
+  font-size: 16px;
+  line-height: 2px;
+  text-transform: uppercase;
+  color: black;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+.label2:hover{
+  opacity: 1;
+}
+
+.inner:before, .inner:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  background: red;
+  left: 0;
+  transition: all .3s ease-in;
+}
+
+.inner:before {
+  top: 50%; 
+  transform: rotate(45deg);  
+}
+
+.inner:after {  
+  bottom: 50%;
+  transform: rotate(-45deg);  
+}
+
+.outer:hover label {
+  opacity: 1;
+  color: #dd2727;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}
+
+
+
+
+
+
+
+.buttonsOnModal {
+      display: flex;
+    width: 100%;
+    gap: 5px;
+    --b: 3px;
+    --h: 1.6em;
+    justify-content: center;
+}
+
+.buttonsOnModal button {
+  --_c: var(--darkgreen-color);
+  flex: calc(1.25 + var(--_s,0));
+  min-width: 0;
+  font-size: 22px;
+  font-weight: bold;
+  height: var(--h);
+  cursor: pointer;
+  color: var(--_c);
+  border: var(--b) solid var(--_c);
+  background: conic-gradient(at calc(100% - 1.3*var(--b)) 0,var(--_c) 209deg, #0000 211deg) border-box;
+  clip-path: polygon(0 0,100% 0,calc(100% - 0.577*var(--h)) 100%,0 100%);
+  padding: 0 calc(0.288*var(--h)) 0 0;
+  margin: 0 calc(-0.288*var(--h)) 0 0;
+  box-sizing: border-box;
+  transition: flex .4s;
+}
+.buttonsOnModal button + button {
+  --_c: #FF003C;
+  flex: calc(.75 + var(--_s,0));
+  background: 
+    conic-gradient(from -90deg at calc(1.3*var(--b)) 100%,var(--_c) 119deg, #0000 121deg) 
+    border-box;
+  clip-path: polygon(calc(0.577*var(--h)) 0,100% 0,100% 100%,0 100%);
+  margin: 0 0 0 calc(-0.288*var(--h));
+  padding: 0 0 0 calc(0.288*var(--h));
+}
+.buttonsOnModal button:focus-visible {
+  outline-offset: calc(-2*var(--b));
+  outline: calc(var(--b)/2) solid #000;
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+.buttonsOnModal button:focus-visible + button {
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+.buttonsOnModal button:has(+ button:focus-visible) {
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+.buttonsOnModal button:hover,
+.buttonsOnModal button:active:not(:focus-visible) {
+  --_s: .75;
+}
+.buttonsOnModal button:active {
+  box-shadow: inset 0 0 0 100vmax var(--_c);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
